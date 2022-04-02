@@ -13,8 +13,7 @@
 * 리뷰 등록
 * 등..  
 ## ER다이어그램
-![ER다이어그램](https://user-images.githubusercontent.com/81346198/161370876-53f7782b-12a6-4cd4-857c-bf8d78d527a3.jpg)  
 **회원**(__아이디__, 비밀번호, 이름, 나이, 전화번호)  
 **도서**(__ISBN__, 제목, 저자, 출판사, 평점)  
 **리뷰**(__리뷰번호__, __ISBN__, 작성자, 제목, 내용, 별점)  
-
+![ER다이어그램](https://user-images.githubusercontent.com/81346198/161370876-53f7782b-12a6-4cd4-857c-bf8d78d527a3.jpg)  
