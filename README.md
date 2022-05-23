@@ -39,6 +39,7 @@
 ## 스키마
 ![릴레이션](https://user-images.githubusercontent.com/81346198/169816099-6f977157-1010-4355-86d1-213c53077efd.png)
 ![물리적스키마](https://user-images.githubusercontent.com/81346198/169830788-e000fe30-e956-4517-ad58-fcb58a680593.png)
+
 CREATE TABLE 도서 (
 
 ISBN VARCHAR(20) NOT NULL,
