@@ -34,4 +34,5 @@
 13. 회원이 도서를 리뷰하면 리뷰에 대한 글번호, 제목, 내용, 작성일, 평점 정보를 유지해야 한다.
 
 ## ER 다이어그램
-![ERD 0523ver ](https://user-images.githubusercontent.com/81346198/169809730-81e17f89-8e08-4e72-9cf4-6dc1c8142c18.png)
+![ERD 0523ver ](https://user-images.githubusercontent.com/81346198/169811297-b45adc7c-6d52-4853-a4e3-034779a02fe4.png)
+
