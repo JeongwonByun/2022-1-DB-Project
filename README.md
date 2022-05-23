@@ -39,3 +39,80 @@
 ## 스키마
 ![릴레이션](https://user-images.githubusercontent.com/81346198/169816099-6f977157-1010-4355-86d1-213c53077efd.png)
 ![물리적스키마](https://user-images.githubusercontent.com/81346198/169830788-e000fe30-e956-4517-ad58-fcb58a680593.png)
+CREATE TABLE 도서 (
+
+ISBN VARCHAR(20) NOT NULL,
+
+제목 VARCHAR(30) NOT NULL,
+
+작가 INT,
+
+출판사 VARCHAR(20),
+
+발행일 DATE(20) ,
+
+PRIMARY KEY(ISBN),
+
+FOREIGN KEY(작가) REFERENCES 작가(작가번호),
+
+FOREIGN KEY(출판사) REFERENCES 출판사(사업자번호)
+
+);
+
+CREATE TABLE 작가(
+
+작가번호 INT NOT NULL,
+
+작가이름 VARCHAR(20) NOT NULL,
+
+등단작 VARCHAR(30) ,
+
+생년월일 DATE,
+
+PRIMARY KEY(작가번호)
+
+);
+
+CREATE TABLE 출판사(
+
+사업자번호  VARCHAR(20) NOT NULL,
+
+출판사이름 VARCHAR(30) NOT NULL,
+
+주소 VARCHAR(100) ,
+
+PRIMARY KEY(사업자번호)
+
+);
+
+CREATE TABLE 회원(
+
+회원아이디 VARCHAR(20) NOT NULL,
+
+비밀번호 VARCHAR(20) NOT NULL,
+
+이름 VARCHAR(20) NOT NULL,
+
+나이 INT,
+
+전화번호 VARCHAR(20),
+
+PRIMARY KEY(회원아이디)
+
+);
+
+CREATE TABLE 리뷰(
+
+글번호 INT NOT NULL,
+
+제목 VARCHAR(50) NOT NULL,
+
+내용 VARCHAR(500) NOT NULL,
+
+작성일 DATE,
+
+평점 INT,
+
+PRIMARY KEY(글번호)
+
+);
