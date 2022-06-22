@@ -37,8 +37,8 @@
 ![ERD 0523ver ](https://user-images.githubusercontent.com/81346198/169811297-b45adc7c-6d52-4853-a4e3-034779a02fe4.png)
 
 ## 스키마
-![릴레이션](https://user-images.githubusercontent.com/81346198/169816099-6f977157-1010-4355-86d1-213c53077efd.png)
-https://github.com/JeongwonByun/2022-1-DB-Project/blob/main/%EB%A6%B4%EB%A0%88%EC%9D%B4%EC%85%98%EC%8A%A4%ED%82%A4%EB%A7%88.drawio.png?raw=true
+![릴레이션](https://user-images.githubusercontent.com/81346198/175051314-67515a4f-4891-4175-8c1f-f3cf83b0c3ea.png)
+
 ![물리적스키마](https://user-images.githubusercontent.com/81346198/169830788-e000fe30-e956-4517-ad58-fcb58a680593.png)
 
 CREATE TABLE 도서 (
