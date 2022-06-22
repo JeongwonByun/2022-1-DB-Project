@@ -38,6 +38,7 @@
 
 ## 스키마
 ![릴레이션](https://user-images.githubusercontent.com/81346198/169816099-6f977157-1010-4355-86d1-213c53077efd.png)
+https://github.com/JeongwonByun/2022-1-DB-Project/blob/main/%EB%A6%B4%EB%A0%88%EC%9D%B4%EC%85%98%EC%8A%A4%ED%82%A4%EB%A7%88.drawio.png?raw=true
 ![물리적스키마](https://user-images.githubusercontent.com/81346198/169830788-e000fe30-e956-4517-ad58-fcb58a680593.png)
 
 CREATE TABLE 도서 (
