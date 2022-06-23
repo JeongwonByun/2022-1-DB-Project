@@ -41,26 +41,6 @@
 
 ![물리적스키마](https://user-images.githubusercontent.com/81346198/169830788-e000fe30-e956-4517-ad58-fcb58a680593.png)
 
-CREATE TABLE 도서 (
-
-ISBN VARCHAR(20) NOT NULL,
-
-제목 VARCHAR(30) NOT NULL,
-
-작가 INT,
-
-출판사 VARCHAR(20),
-
-발행일 DATE(20) ,
-
-PRIMARY KEY(ISBN),
-
-FOREIGN KEY(작가) REFERENCES 작가(작가번호),
-
-FOREIGN KEY(출판사) REFERENCES 출판사(사업자번호)
-
-);
-
 CREATE TABLE 작가(
 
 작가번호 INT NOT NULL,
@@ -84,6 +64,34 @@ CREATE TABLE 출판사(
 주소 VARCHAR(100) ,
 
 PRIMARY KEY(사업자번호)
+
+);
+
+CREATE TABLE 도서 (
+
+ISBN VARCHAR(20) NOT NULL,
+
+제목 VARCHAR(30) NOT NULL,
+
+작가 INT,
+
+출판사 VARCHAR(20),
+
+발행일 DATE,
+
+PRIMARY KEY(ISBN),
+
+FOREIGN KEY(작가) REFERENCES 작가(작가번호),
+
+FOREIGN KEY(출판사) REFERENCES 출판사(사업자번호)
+
+);
+
+CREATE TABLE 도서작가 (
+
+ISBN VARCHAR(20) NOT NULL,
+
+작가번호 INT
 
 );
 
@@ -115,7 +123,15 @@ CREATE TABLE 리뷰(
 
 평점 INT,
 
-PRIMARY KEY(글번호)
+ISBN VARCHAR(20),
+
+회원아이디 VARCHAR(20),
+
+PRIMARY KEY(글번호),
+
+FOREIGN KEY(ISBN) REFERENCES 도서(ISBN),
+
+FOREIGN KEY(회원아이디) REFERENCES 회원(회원아이디)
 
 );
 ## 정규화
